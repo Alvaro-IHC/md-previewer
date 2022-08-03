@@ -1,0 +1,76 @@
+:root {
+  --primary-color: #87B5B5;
+  --secondary-color: #4AA3A3;
+  --tertiary-color: #C0D8D8;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*, *::after, *::before {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 1.6rem;
+  background-color: var(--primary-color);
+  padding: 0.5rem;
+}
+
+.App {
+  text-align: center;
+}
+
+.container {
+  margin: 0 auto;
+  box-shadow: 1px 1px 10px 2px #3a5f5f;
+  border: 1px solid black;
+}
+
+.editor {
+  width: 85%;
+}
+
+.editor textarea {
+  width: 100%;
+  background-color: var(--tertiary-color);
+  padding: 0.5rem;
+  outline: none;
+  min-height: 18rem;
+}
+.previewer {
+  margin-top: 2rem;
+  width: 95%;
+}
+
+.previewer .content {
+  min-height: 15rem;
+  background-color: var(--tertiary-color);
+  padding: 0.5rem;
+}
+
+.bar-title {
+  background-color: var(--secondary-color);
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.8rem 1.5rem;
+  align-items: center;
+}
+
+.left {
+  display: flex;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+}
+
+.title {
+  margin: 0;
+  padding-left: 1rem;
+  font-weight: bold;
+}
