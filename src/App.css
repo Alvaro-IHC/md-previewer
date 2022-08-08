@@ -21,6 +21,7 @@ body {
 
 .App {
   text-align: center;
+  height: 100vh;
 }
 
 .container {
@@ -31,24 +32,35 @@ body {
 
 .editor {
   width: 85%;
+  max-width: 60rem;
+  border: none;  
+  background-color: var(--tertiary-color);
+  padding: 0;
+  padding: auto;
 }
 
-.editor textarea {
+textarea {
   width: 100%;
+  height: calc(100% - 1.9rem);
   background-color: var(--tertiary-color);
   padding: 0.5rem;
   outline: none;
   min-height: 18rem;
+  margin: 0;
+  resize: none;
+  border: none;
 }
 .previewer {
   margin-top: 2rem;
   width: 95%;
+  max-width: 80rem;
 }
 
-.previewer .content {
-  min-height: 15rem;
+.content {
   background-color: var(--tertiary-color);
+  min-height: 15rem;
   padding: 0.5rem;
+  height: calc(100% - 1.9rem)
 }
 
 .bar-title {
@@ -58,6 +70,7 @@ body {
   justify-content: space-between;
   padding: 0.8rem 1.5rem;
   align-items: center;
+  width: 100.3%;
 }
 
 .left {
@@ -73,4 +86,13 @@ body {
   margin: 0;
   padding-left: 1rem;
   font-weight: bold;
+}
+
+.min-max:hover {
+  cursor: pointer;
+}
+
+.expanded {
+  height: calc(100% - 1.9rem);
+  margin-top: 0;
 }

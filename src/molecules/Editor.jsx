@@ -1,8 +1,8 @@
 import React from "react";
 
-const Editor = () => {
+const Editor = ({ expanded }) => {
   return (
-    <div id="editor">
+    <div id="editor" className={`${expanded ? "expanded" : ""}`}>
       <textarea />
     </div>
   );

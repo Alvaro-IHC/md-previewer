@@ -1,8 +1,8 @@
 import React from "react";
 
-const Previewer = () => {
+const Previewer = ({ expanded }) => {
   return (
-    <div id="previewer">
+    <div id="previewer" className={`${expanded && "expanded"}`}>
       <div className="content">Hola</div>
     </div>
   );
